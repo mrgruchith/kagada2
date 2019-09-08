@@ -36,11 +36,11 @@
                     </div>
 
                     <div class="sidenav ">
-                        <a href = "#home"><div id="home">HOME</div></a>
-                        <a href = "#2018" onclick="slide()"><div>KAGADA 2018</div></a>
-                        <a href = "#topics" onclick="slide()"><div >TOPICS</div></a>
-                        <a href = "#sponsors"><div >SPONSORS</div></a>
-                        <a href = "#contactus"><div >CONTACT US</div></a>
+                        <a href = ""><div id="home">HOME</div></a>
+                        <a href = "#2018" onclick="slide2()"><div>KAGADA 2018</div></a>
+                        <a href = "#topics" onclick="slide3()"><div >TOPICS</div></a>
+                        <a href = "#sponsors" onclick="slide4()"><div >SPONSORS</div></a>
+                        <a href = "#contactus" onclick="slide5()"><div >CONTACT US</div></a>
                     </div>
                     
                 </div>
@@ -196,16 +196,7 @@
                                         </div>
                                     </div>
                                 
-                                
-                                
-                                
-                                    
-                                
-                                
-                                
-                                
-                                
-                                    <div id="sponsors" class="sponsorship">
+                                <div id="sponsors" class="sponsorship">
                                         <h1>OUR PREVIOUS SPONSORS</h1>
                                         <DIV class="spon">
                                             <img src="./img/sponsors/1.png" alt="alumini" width="180px" height="75px">
@@ -297,8 +288,19 @@
         
     </body>
     <script text="text/javascript">
-        $(".content-des").hide();
-        function slide(){$(".content-des").slideToggle()}
+        $(".content-des").hide();$(".topicdiv").hide();$(".sponsorship").hide();
+        $(".kagada2018").hide();$(".content-des").hide();$(".content-des").hide();
+
+        
+        
+        function slide2(){$(".content-des").hide();$(".topicdiv").hide();$(".sponsorship").hide();
+        $(".kagada2018").hide();$(".content-des").slideToggle();$(".kagada2018").show();}
+        function slide3(){$(".content-des").hide();$(".topicdiv").hide();$(".sponsorship").hide();
+        $(".kagada2018").hide();$(".content-des").slideToggle();$(".topicdiv").show();}
+        function slide4(){$(".content-des").hide();$(".topicdiv").hide();$(".sponsorship").hide();
+        $(".kagada2018").hide();$(".content-des").slideToggle();$(".sponsership").show();}
+        function slide5(){$(".content-des").hide();}
+    
 
     </script>
 </html>
