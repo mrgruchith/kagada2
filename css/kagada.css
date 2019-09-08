@@ -1,0 +1,435 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: rgba(0, 0, 0, 0.589);
+    position: relative;
+  }
+
+  /*---------------------------------*/
+  .head{
+      text-align: center;
+      background-color: white;
+      
+  }
+  /*----------------------------------*/
+  .contents{
+    display: block;
+    position: fixed;
+    height: 100%;
+    top: 0%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  .main{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    z-index: 100;
+    
+  }
+  .main1{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 80%;
+
+  }
+
+  
+  .sidenav-container{
+      width: auto;
+      height: auto;
+      position: fixed;
+      z-index: 2;
+      align-content: center;
+      justify-content: center;  
+      background-color: white; 
+      padding: 10px;
+          
+  }
+  .logo{
+    align-content: center;
+  }
+
+  .content-des{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    overflow-y: scroll;
+    -webkit-animation: drop 1s ;
+    -webkit-animation-delay: 0;
+    -webkit-animation-fill-mode: forwards;
+    animation: drop 1s;
+    animation-delay: 0;
+    animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes drop{
+    from{left:-100%}
+    to{left: 0%}
+  }
+  @keyframes drop{
+    from{left:-100%}
+    to{left: 0%}
+  }
+  .sidenav {
+    width: auto;
+    z-index: 1;
+    top: 30%;
+    left: 10px;
+    background: black;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: white;
+    background-color: rgb(177, 4, 4);
+    text-decoration: none;
+
+  }
+  .sidenav a:hover .content-des{
+    display: block;
+  }
+  /*----------------------------------*/
+  .kagada{
+    background-image: url("../images/back/back.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 30px;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -1% 0%;
+    height: 500px;
+  }
+
+  .kagada-title{
+      font-style: bold;
+
+  }
+
+  .kagada-content{
+      background-color: rgba(255, 0, 0, 0.698);
+      height: fit-content;
+      border-radius: 20px;
+  }
+  /*-----------------------------------------------------------------------*/
+  .kagada2018{
+    background: rgb(255, 117, 37);
+    margin: 2% 5%;
+    border-radius: 5px;
+}
+.kagada2018 h1 {
+    text-align: center;
+    align-content: center;
+    color: black;
+    font-size: 300%;
+    font-family: 'Cormorant Garamond',Calibri,'Trebuchet MS',sans-serif;
+    display: block;
+    margin: 0%;
+    padding: 2%;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(260, 260, 260, 0.85) 50%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(260, 260, 260, 0.85) 50%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(260, 260, 260, 0.85) 50%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+}
+.home2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    align-content: center;
+    padding: 2%;
+}
+
+.home2 .card1{
+    margin: 1% 5%;
+    display: block;
+    align-content: center;
+
+}
+.home2 .cardhead{
+    color: black;
+    background-color: white;
+    font-family: 'Cormorant Garamond',Calibri,'Trebuchet MS',sans-serif;
+    font-weight: bolder;
+    width: 250px;
+    height: 190px;
+    font-size: 28px;
+    margin: 0%;
+    align-content: center;
+    text-align: center;
+    padding: 0.25% 2%;
+    border-radius: 15px 50px 0px 0px;
+}
+.home2 .cardpart {
+    color: black;
+    background-color: rgba(0,0,0,1);
+    font-family: 'Cormorant Garamond',
+    Calibri,
+    'Trebuchet MS',
+    sans-serif;
+    font-size: 24px;
+    margin: 0%;
+    padding: 0.25% 2%;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0px 0px 15px 50px;
+
+}
+.cardimg1{
+    background-image: url(../img/back/ug1.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    width: 250px;
+    height: 200px;
+    background-size: cover;
+    margin: 0%;
+
+}
+.cardimg2 {
+    background-image: url(../img/back/pg1.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    width: 250px;
+    height: 200px;
+    background-size: cover;
+    margin: 0% ;
+}
+.cardimg3 {
+    background-image: url(../img/back/wie.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    width: 250px;
+    height: 200px;
+    background-size: cover;
+    margin: 0%;
+}
+.cardimg4 {
+    background-image: url(../img/back/project.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    width: 250px;
+    height: 200px;
+    background-size: cover;
+    margin: 0%;
+}
+.cardimg5 {
+    background-image: url(../img/back/poster.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    width: 250px;
+    height: 200px;
+    background-size: cover;
+    margin: 0% ;
+}
+  /*------------------------------------------------------------------------*/
+  .topicdiv {
+    background: rgb(255, 117, 37);
+    margin: 5% 5%;
+    border-radius: 5px;
+}
+.topicdiv h1 {
+    text-align: center;
+    align-content: center;
+    color: black;
+    font-size: 300%;
+    font-family: 'Cormorant Garamond',
+    Calibri,
+    'Trebuchet MS',
+    sans-serif;
+    display: block;
+    margin: 2% 2% 0% 2%;
+    padding: 2%;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(260, 260, 260, 0.85) 50%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(260, 260, 260, 0.85) 50%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(260, 260, 260, 0.85) 50%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+}
+.topicdiv h2 {
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Cormorant Garamond',
+    Calibri,
+    'Trebuchet MS',
+    sans-serif;
+    display: block;
+    margin: 0;
+    padding: 2%;
+}
+
+.dropbtn {
+    background-color: rgb(25, 109, 165);
+    color: white;
+    padding: 16px;
+    font-size: 150%;
+    border: none;
+    cursor: pointer;
+
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(11, 40, 59);
+}
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+
+}
+.dropdown-content p {
+    color: black;
+    padding: 1% 2%;
+    margin: 0;
+    text-decoration: none;
+    display: block;
+    font-size: 100%;
+}
+
+.dropdown-content p:hover {
+    background-color: #ddd
+}
+.show {
+    display: block;
+}
+
+  /*--------------------------------------------------------------------------*/
+  .galleryhead{
+    font-family: 'Cormorant Garamond',
+    Calibri,
+    'Trebuchet MS',
+    sans-serif;
+    text-align: center;
+    color: black;
+    align-content: center;
+    padding: 0.25%;
+    font-size: 20px;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(260, 260, 260, 0.85) 50%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(260, 260, 260, 0.85) 50%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(260, 260, 260, 0.85) 50%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+}
+.gallery1{
+
+    background: black;
+    margin: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.gallery img{
+    border: 2px solid #fff;
+
+}
+div.gallery {
+    margin: 1%;
+    padding: 0% 4%;
+    width: 60vh;
+    opacity: 0.8;
+}
+
+div.gallery:hover {
+    width: 80vh;
+    opacity: 1;
+    transition-duration: 500ms;
+}
+
+div.gallery img {
+    width: 120%;
+    height: 90%;
+}
+/*---------------------------------------------------------------------------*/
+.sponsorship{
+  background-color: rgb(255, 117, 37);
+  margin: 2% 0%;
+  opacity: 1;
+}
+.spon{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.spon img{
+  margin: 2%;
+}
+.sponsorship h1{
+  text-align: center;
+  color: black;
+  font-size: 300%;
+  font-family: 'Cormorant Garamond',Calibri,'Trebuchet MS',sans-serif;
+  display: block;
+  margin: 2% 2% 2% 2%;
+  padding: 1%;
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(260, 260, 260, 0.85) 50%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(260, 260, 260, 0.85) 50%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(260, 260, 260, 0.85) 50%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+
+}
+
+
+  /*--------------------------------------------------------------------------*/
+  .details, .details h1{
+    width: 100%;
+    text-align: center;
+  }
+
+  .dates
+  {
+    text-align: center;
+  }
+  /*-----------------------------------------*/
+  .comingsoon{
+    box-shadow: white;
+}
+.comingsoon img{
+    margin: 5% 5%;
+    width: 90%;
+    opacity: 0.8;
+
+}
+.comingsoon img:hover{
+    opacity: 1;
+    margin: 3% 2.5%;
+    width:95%;
+    transition-duration: 250ms;
+}
+/*---------------------------------------------------------------*/
+.contact{
+  display: flex;
+}
+  
